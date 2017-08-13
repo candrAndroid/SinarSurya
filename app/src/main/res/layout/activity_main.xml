@@ -9,16 +9,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="#faf"
+        android:background="@drawable/gradasi"
         android:orientation="vertical"
         android:padding="16dp">
 
         <TextView
-            style="?android:textAppearanceLargeInverse"
+            style="?android:textAppearanceLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="@string/hari"/>
+            android:text="@string/hari"
+            android:id="@+id/txt_hari"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,24 +37,36 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@mipmap/ic_launcher_round"/>
+                    android:src="@drawable/imgcuacacerahberawan"
+                    android:id="@+id/img_cuaca"/>
 
                 <TextView
-                    style="?android:textAppearanceMediumInverse"
+                    style="?android:textAppearanceMedium"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="@string/cuaca"/>
+                    android:text="@string/cuaca"
+                    android:id="@+id/txt_cuaca"/>
             </LinearLayout>
 
             <TextView
-                style="?android:textAppearanceLargeInverse"
+                style="?android:textAppearanceLarge"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/suhu"/>
+                android:text="@string/suhu"
+                android:textSize="60sp"
+                android:id="@+id/txt_suhu"/>
         </LinearLayout>
     </LinearLayout>
 
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_weatherlist">
+
+
+
+    </android.support.v7.widget.RecyclerView>
 </LinearLayout>
